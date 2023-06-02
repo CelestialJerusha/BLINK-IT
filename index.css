@@ -750,23 +750,23 @@ header .container{
     }
     
     .banner2{
-        gap: 12px;
-        margin: 0px 8px;
+        gap: 8px;
+        margin: 0px 6px;
     }
     
     .banner2 .banner-img img{
-        height: 120px;
-        width: 255px;
+        height: 80px;
+        width: 140px;
     }
 
     .categories{
         display: grid;
-        grid-template-columns: repeat(8, 12%);
+        grid-template-columns: repeat(8, 10%);
     }
     
     .items{
-        margin: 0px 8px;
-        row-gap: 14px;
+        margin: 0px 6px;
+        row-gap: 10px;
     }
     
     .title .category-name{
@@ -774,34 +774,34 @@ header .container{
     }
     
     .list{
-        column-gap: 10px;
+        column-gap: 7px;
     }
     
     .list .item{
-        padding: 14px;
+        padding: 10px;
     }
     
     .item-name{
-        font-size: 9px;
+        font-size: 7px;
         font-weight: var(--fw-400);
     }
     .item-weight{
-        font-size: 7px;
+        font-size: 6px;
     }
     .price{
-        font-size: 8px;
+        font-size: 7px;
     }
     .item-price{
         column-gap: 6px;
         margin-top: 10px;
     }
     .item-price button{
-        padding: 3px 13px;
+        padding: 2px 10px;
     }
 
     .footer-section{
         padding: 85px;
-        font-size: 12px;
+        font-size: 8px;
     }
 }
 
