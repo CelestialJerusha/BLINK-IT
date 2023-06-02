@@ -1,0 +1,807 @@
+@import url('./variable.css');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-family);
+}
+
+/* header section */
+header .container{
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 80px;
+    border-bottom: 1px solid rgb(238, 238, 238);
+    z-index: 1000;
+    background-color: var(--color-white);
+}
+
+.logo, .location, .search-bar, .login, .cart{
+    margin: 0px 25px;
+}
+
+.logo svg{
+    width: 100%;
+    height: 20px;
+}
+
+.location .location-title{
+    font-size: 14px;
+    font-weight: var(--fw-800);
+    margin-bottom: 3px;
+}
+
+.location .location-desc{
+    font-size: 11px;
+}
+
+.search-bar svg{
+    width: 17px;
+    height: 20px;
+    color: var(--color-black);
+}
+
+.search-bar{
+    display: flex;
+    align-items: center;
+    width: 55%;
+    height: 35px;
+    border: 1px solid rgba(0, 0, 0, 0.04);
+    border-radius: 7px;
+    background: var(--color-grey-2);
+    color: var(--color-grey);
+    padding-left: 8px;
+}
+
+.search-bar input{
+    width: 100%;
+    border: 0;
+    outline: 0;
+    background-color: transparent;
+    font-size: 12px;
+}
+
+.input-box{
+    width: 100%;
+    padding-left: 8px;
+}
+
+.login{
+    font-size: 14px;
+    color: var(--color-grey);
+}
+ .cart{
+    width: 100px;
+ }
+.cart svg{
+    width: 17px;
+    height: 20px;
+}
+
+.cart button{
+    display: flex;
+    align-items: center;
+    padding: 13px;
+    color: var(--color-white);
+    background-color: var(--color-green);
+    border-radius: 7px;
+    font-size: 13px;
+    font-weight: var(--fw-600);
+    border: none;
+    gap: 5px;
+}
+
+/* main-section */
+
+.wrapper{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    top: 80px;
+}
+
+.main-container{
+    max-width: 1200px;
+}
+
+.banner img{
+    width: 100%;
+}
+
+.banner2{
+    display: flex;
+    gap: 18px;
+    overflow: scroll;
+    margin: 0px 14px;
+}
+
+.banner2 .banner-img img{
+    height: 195px;
+    width: 335px;
+}
+
+.categories{
+    display: grid;
+    grid-template-columns: repeat(10, 10%);
+}
+
+.section3-img img{
+    width: 100%;
+}
+
+.items{
+    display: flex;
+    flex-direction: column;
+    margin: 0px 14px;
+    row-gap: 20px;
+    overflow: scroll;
+}
+
+.items .title{
+    display: flex;
+    justify-content: space-between;
+}
+
+.title .category-name{
+    font-weight: var(--fw-600);
+}
+
+.list{
+    display: flex;
+    column-gap: 15px;
+}
+
+.list .item{
+    width: 15%;
+    border: 0.5px solid rgb(232, 232, 232);
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.item .item-img img{
+    width: 100%;
+}
+
+.item-name{
+    font-size: 13px;
+    font-weight: var(--fw-500);
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.item-weight{
+    font-size: 10px;
+    color: var(--color-grey);
+}
+.price{
+    font-size: 12px;
+}
+.item-price{
+    display: flex;
+    column-gap: 10px;
+    align-items: center;
+    margin-top: 15px;
+}
+.item-price button{
+    padding: 5px 20px;
+    border: 1px solid;
+    border-radius: 6px;
+    border-color: var(--color-green);
+    background-color: var(--color-lightgreen);
+}
+
+/* footer-section */
+
+.footer-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 150px;
+    font-size: 18px;
+}
+
+/* media queries */
+@media screen and (max-width: 1218px){
+    header .container{
+        height: 70px;
+    }
+    
+    .logo, .location, .search-bar, .login, .cart{
+        margin: 0px 22px;
+    }
+    
+    .logo svg{
+        height: 18px;
+    }
+    
+    .location .location-title{
+        font-size: 13px;
+    }
+    
+    .location .location-desc{
+        font-size: 11px;
+    }
+    
+    .search-bar svg{
+        width: 15px;
+        height: 18px;
+    }
+    
+    .search-bar{
+        height: 32px;
+        padding-left: 7px;
+    }
+    
+    .search-bar input{
+        font-size: 10px;
+    }
+    
+    .input-box{
+        padding-left: 7px;
+    }
+    
+    .login{
+        font-size: 13px;
+    }
+     .cart{
+        width: 95px;
+     }
+    .cart svg{
+        width: 15px;
+        height: 18px;
+    }
+    
+    .cart button{
+        padding: 12px;
+        border-radius: 7px;
+        font-size: 12px;
+        font-weight: var(--fw-500);
+    }
+
+    .wrapper{
+        top: 70px;
+    }
+    
+    .main-container{
+        max-width: 1100px;
+    }
+    
+    .banner2{
+        gap: 16px;
+        margin: 0px 12px;
+    }
+    
+    .banner2 .banner-img img{
+        height: 175px;
+        width: 315px;
+    }
+    
+    .items{
+        margin: 0px 12px;
+        row-gap: 18px;
+    }
+    
+    .title .category-name{
+        font-weight: var(--fw-500);
+    }
+    
+    .list{
+        column-gap: 13px;
+    }
+    
+    .list .item{
+        border-radius: 7px;
+        padding: 18px;
+    }
+    
+    .item-name{
+        font-size: 11px;
+        font-weight: var(--fw-500);
+    }
+    .item-weight{
+        font-size: 9px;
+    }
+    .price{
+        font-size: 11px;
+    }
+    .item-price{
+        column-gap: 8px;
+        margin-top: 13px;
+    }
+    .item-price button{
+        padding: 5px 18px;
+    }
+
+    .footer-section{
+        padding: 130px;
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 1080px){
+    header .container{
+        height: 65px;
+    }
+    
+    .logo, .location, .search-bar, .login, .cart{
+        margin: 0px 20px;
+    }
+    
+    .logo svg{
+        height: 15px;
+    }
+    
+    .location .location-title{
+        font-size: 12px;
+    }
+    
+    .location .location-desc{
+        font-size: 10px;
+    }
+    
+    .search-bar svg{
+        width: 13px;
+        height: 16px;
+    }
+    
+    .search-bar{
+        height: 30px;
+        padding-left: 6px;
+    }
+    
+    .search-bar input{
+        font-size: 9px;
+    }
+    
+    .input-box{
+        padding-left: 7px;
+    }
+    
+    .login{
+        font-size: 12px;
+    }
+     .cart{
+        width: 90px;
+     }
+    .cart svg{
+        width: 13px;
+        height: 16px;
+    }
+    
+    .cart button{
+        padding: 10px;
+        border-radius: 6px;
+        font-size: 11px;
+        font-weight: var(--fw-500);
+    }
+
+    .wrapper{
+        top: 65px;
+    }
+    
+    .main-container{
+        max-width: 1000px;
+    }
+    
+    .banner2{
+        gap: 14px;
+        margin: 0px 10px;
+    }
+    
+    .banner2 .banner-img img{
+        height: 150px;
+        width: 285px;
+    }
+    
+    .items{
+        margin: 0px 10px;
+        row-gap: 16px;
+    }
+    
+    .title .category-name{
+        font-weight: var(--fw-500);
+    }
+    
+    .list{
+        column-gap: 12px;
+    }
+    
+    .list .item{
+        border-radius: 7px;
+        padding: 16px;
+    }
+    
+    .item-name{
+        font-size: 10px;
+        font-weight: var(--fw-500);
+    }
+    .item-weight{
+        font-size: 8px;
+    }
+    .price{
+        font-size: 9px;
+    }
+    .item-price{
+        column-gap: 7px;
+        margin-top: 11px;
+    }
+    .item-price button{
+        padding: 4px 16px;
+    }
+
+    .footer-section{
+        padding: 105px;
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 950px){
+    header .container{
+        height: 60px;
+    }
+    
+    .logo, .location, .search-bar, .login, .cart{
+        margin: 0px 17px;
+    }
+    
+    .logo svg{
+        height: 13px;
+    }
+    
+    .location .location-title{
+        font-size: 10px;
+    }
+    
+    .location .location-desc{
+        font-size: 8px;
+    }
+    
+    .search-bar svg{
+        width: 11px;
+        height: 13px;
+    }
+    
+    .search-bar{
+        height: 27px;
+        padding-left: 5px;
+    }
+    
+    .search-bar input{
+        font-size: 8px;
+    }
+    
+    .input-box{
+        padding-left: 6px;
+    }
+    
+    .login{
+        font-size: 10px;
+    }
+     .cart{
+        width: 85px;
+     }
+    .cart svg{
+        width: 11px;
+        height: 14px;
+    }
+    
+    .cart button{
+        padding: 8px;
+        font-size: 9px;
+        font-weight: var(--fw-400);
+    }
+
+    .wrapper{
+        top: 60px;
+    }
+    
+    .main-container{
+        max-width: 900px;
+    }
+    
+    .banner2{
+        gap: 12px;
+        margin: 0px 8px;
+    }
+    
+    .banner2 .banner-img img{
+        height: 120px;
+        width: 255px;
+    }
+    
+    .items{
+        margin: 0px 8px;
+        row-gap: 14px;
+    }
+    
+    .title .category-name{
+        font-weight: var(--fw-400);
+    }
+    
+    .list{
+        column-gap: 10px;
+    }
+    
+    .list .item{
+        padding: 14px;
+    }
+    
+    .item-name{
+        font-size: 9px;
+        font-weight: var(--fw-400);
+    }
+    .item-weight{
+        font-size: 7px;
+    }
+    .price{
+        font-size: 8px;
+    }
+    .item-price{
+        column-gap: 6px;
+        margin-top: 10px;
+    }
+    .item-price button{
+        padding: 3px 13px;
+    }
+
+    .footer-section{
+        padding: 85px;
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 760px) {
+    header .container{
+        height: 60px;
+    }
+    
+    .logo, .location, .search-bar, .login, .cart{
+        margin: 0px 17px;
+    }
+    
+    .logo svg{
+        height: 13px;
+    }
+    
+    .location .location-title{
+        font-size: 10px;
+    }
+    
+    .location .location-desc{
+        font-size: 8px;
+    }
+    
+    .search-bar svg{
+        width: 11px;
+        height: 13px;
+    }
+    
+    .search-bar{
+        height: 27px;
+        padding-left: 5px;
+    }
+    
+    .search-bar input{
+        font-size: 8px;
+    }
+    
+    .input-box{
+        padding-left: 6px;
+    }
+    
+    .login{
+        font-size: 10px;
+    }
+     .cart{
+        width: 85px;
+     }
+    .cart svg{
+        width: 11px;
+        height: 14px;
+    }
+    
+    .cart button{
+        padding: 8px;
+        font-size: 9px;
+        font-weight: var(--fw-400);
+    }
+
+    .wrapper{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        position: relative;
+        top: 60px;
+    }
+    
+    .main-container{
+        max-width: 680px;
+    }
+
+    .banner img{
+        width: 90%;
+    }
+    
+    .banner2{
+        gap: 8px;
+        margin: 0px 8px;
+    }
+    
+    .banner2 .banner-img img{
+        height: 100px;
+        width: 180px;
+    }
+
+    .categories{
+        display: grid;
+        grid-template-columns: repeat(8, 12%);
+    }
+    
+    .items{
+        margin: 0px 8px;
+        row-gap: 14px;
+    }
+    
+    .title .category-name{
+        font-weight: var(--fw-400);
+    }
+    
+    .list{
+        column-gap: 10px;
+    }
+    
+    .list .item{
+        padding: 14px;
+    }
+    
+    .item-name{
+        font-size: 9px;
+        font-weight: var(--fw-400);
+    }
+    .item-weight{
+        font-size: 7px;
+    }
+    .price{
+        font-size: 8px;
+    }
+    .item-price{
+        column-gap: 6px;
+        margin-top: 10px;
+    }
+    .item-price button{
+        padding: 3px 13px;
+    }
+
+    .footer-section{
+        padding: 85px;
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 540px){
+    header .container{
+        height: 55px;
+    }
+    
+    .logo, .location, .search-bar, .login, .cart{
+        margin: 0px 13px;
+    }
+    
+    .logo svg{
+        height: 11px;
+    }
+    
+    .location .location-title{
+        font-size: 10px;
+    }
+    
+    .location .location-desc{
+        font-size: 8px;
+    }
+    
+    .search-bar svg{
+        width: 11px;
+        height: 13px;
+    }
+    
+    .search-bar{
+        height: 27px;
+        padding-left: 5px;
+    }
+    
+    .search-bar input{
+        font-size: 8px;
+    }
+    
+    .input-box{
+        padding-left: 6px;
+    }
+    
+    .login{
+        font-size: 10px;
+    }
+     .cart{
+        width: 85px;
+     }
+    .cart svg{
+        width: 11px;
+        height: 14px;
+    }
+    
+    .cart button{
+        padding: 8px;
+        font-size: 9px;
+        font-weight: var(--fw-400);
+    }
+
+    .wrapper{
+        top: 60px;
+    }
+    
+    .main-container{
+        max-width: 600px;
+    }
+    
+    .banner2{
+        gap: 12px;
+        margin: 0px 8px;
+    }
+    
+    .banner2 .banner-img img{
+        height: 120px;
+        width: 255px;
+    }
+
+    .categories{
+        display: grid;
+        grid-template-columns: repeat(8, 12%);
+    }
+    
+    .items{
+        margin: 0px 8px;
+        row-gap: 14px;
+    }
+    
+    .title .category-name{
+        font-weight: var(--fw-400);
+    }
+    
+    .list{
+        column-gap: 10px;
+    }
+    
+    .list .item{
+        padding: 14px;
+    }
+    
+    .item-name{
+        font-size: 9px;
+        font-weight: var(--fw-400);
+    }
+    .item-weight{
+        font-size: 7px;
+    }
+    .price{
+        font-size: 8px;
+    }
+    .item-price{
+        column-gap: 6px;
+        margin-top: 10px;
+    }
+    .item-price button{
+        padding: 3px 13px;
+    }
+
+    .footer-section{
+        padding: 85px;
+        font-size: 12px;
+    }
+}
+
